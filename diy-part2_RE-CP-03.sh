@@ -20,7 +20,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 sed -i "s/hostname='.*'/hostname='JDCloud'/g" package/base-files/files/bin/config_generate
 
 # Modify WiFi
-sed -i "s/ImmortalWrt/RE-CP-03/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+sed -i "s/ImmortalWrt-/RE-CP-03_/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "s/channel=\"[0-9]*\"/channel=\"auto\"/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "s/encryption=.*/encryption='sae-mixed'/g" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "/set wireless.default_\${dev}.encryption='sae-mixed'/a \\\t\t\t\t\t\set wireless.default_\${dev}.key='123456789'" package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
