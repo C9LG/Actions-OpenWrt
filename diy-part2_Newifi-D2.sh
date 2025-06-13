@@ -11,17 +11,17 @@
 #
 
 # Modify default IP
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.2.5/g" package/base-files/files/bin/config_generate
+sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.2.5/g" ./package/base-files/files/bin/config_generate
 
 # Modify default theme
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i "s/hostname='.*'/hostname='Newifi-D2'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='.*'/hostname='Newifi-D2'/g" ./package/base-files/files/bin/config_generate
 
 # Modify WiFi
-# sed -i "s/ssid='.*'/ssid='Newifi-D2'/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-# sed -i "s/channel=\"[0-9]*\"/channel=\"auto\"/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i "s/encryption='.*'/encryption='sae-mixed'/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i "s/key='.*'/key='123456789'/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i "s/country='.*'/country='AU'/g" package/kernel/mac80211/files/lib/wifi/mac80211.sh
+# sed -i "s/ssid='.*'/ssid='Newifi-D2'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+# sed -i "s/channel=\"[0-9]*\"/channel=\"auto\"/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/encryption='.*'/encryption='sae-mixed'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/key='.*'/key='123456789'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/country='.*'/country='AU'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
