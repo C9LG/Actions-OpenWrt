@@ -10,17 +10,17 @@
 # See /LICENSE for more information.
 #
 
-name: LEDE_Newifi-D2
+name: ImmortalWrt_Newifi-D2
 
 on:
   repository_dispatch:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: LEDE_Newifi-D2.config
+  CONFIG_FILE: ImmortalWrt_Newifi-D2.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2_Newifi-D2.sh
   UPLOAD_BIN_DIR: false
