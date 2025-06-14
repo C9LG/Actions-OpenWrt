@@ -20,8 +20,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci
 sed -i "s/hostname='.*'/hostname='Newifi-D2'/g" ./package/base-files/files/bin/config_generate
 
 # Modify WiFi
-# sed -i "s/ssid='.*'/ssid='Newifi-D2'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
-# sed -i "s/channel=\"[0-9]*\"/channel=\"auto\"/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/ssid='.*'/ssid='Newifi-D2'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+sed -i "s/channel='.*'/channel=\"auto\"/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 sed -i "s/encryption='.*'/encryption='sae-mixed'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 sed -i "s/key='.*'/key='123456789'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 sed -i "s/country='.*'/country='AU'/g" ./package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
