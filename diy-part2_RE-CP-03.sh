@@ -24,4 +24,4 @@ sed -i "s/ImmortalWrt-/RE-CP-03_/g" ./package/mtk/applications/mtwifi-cfg/files/
 sed -i "s/channel=\"[0-9]*\"/channel=\"auto\"/g" ./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "s/encryption=.*/encryption='sae-mixed'/g" ./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 sed -i "/set wireless.default_\${dev}.encryption='sae-mixed'/a \\\t\t\t\t\t\set wireless.default_\${dev}.key='123456789'" ./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-sed -i "s/set wireless.\${dev}.country=CN/set wireless.\${dev}.country=AU/g" ./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+sed -i "s/country=.*/country='AU'/g" ./package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
