@@ -2,5 +2,5 @@
 
 ## Credits
 
-- [padavanonly/ImmortalWrt-MT798x](https://github.com/padavanonly/immortalwrt-mt798x-24.10)
+- [padavanonly/ImmortalWrt-MT798x](https://github.com/padavanonly/immortalwrt-mt798x-6.6)
 - [1715173329/ImmortalWrt](https://github.com/immortalwrt/immortalwrt/tree/openwrt-24.10)
