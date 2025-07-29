@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.3.5/g" ./package/base-files/files/bin/config_generate
+sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.2.5/g" ./package/base-files/files/bin/config_generate
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
